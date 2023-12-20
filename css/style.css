@@ -146,7 +146,7 @@ header.sticky {
 .home {
     /* background: url(/img/rwppn); */
     background: url(/img/rwppn-sora-indoo2r.jpg);
-    /* background-size: 100%; */
+    background-size: 100%;
     background-position: center;
     background-attachment: fixed;
     backdrop-filter: blur(10px);
@@ -326,7 +326,7 @@ span:hover {
     align-items: center;
     justify-content: space-between;
     background: url(/img/20.webp) fixed center;
-    backdrop-filter: blur(10px);
+    background-size: 100%;
     border-radius: 10px;
     padding: 4rem 20% 4rem;
     gap: 2rem;
