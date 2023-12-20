@@ -28,9 +28,9 @@ html {
 
 
 body {
-    /* background: var(--bg-color); */
-    background: url(/img/rwppn-sora-indoo2r.jpg);
-    backdrop-filter: blur(3px);
+    background: var(--bg-color);
+    /* background: url(/img/rwppn-sora-indoo2r.jpg); */
+    /* backdrop-filter: blur(3px); */
     background-size: 100%;
     color: var(--text-color);
 }
@@ -46,56 +46,113 @@ section {
 
 .header {
     position: fixed;
-    /* position: static; */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 6px 50px;
-    /* background: var(--second-bg-color); */
+    padding: 6px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
     font-weight: 600;
     /* backdrop-filter: blur(10px); */
-    /* border-bottom: .1rem solid #464646; */
+    border-bottom: .1rem solid #464646;
+    z-index: 100;
+    transition: .3s;
 }
 
 .header img {
+    /* position: relative; */
     width: 9vw;
     cursor: pointer;
 }
 
-.logo {
+/* .logo {
     cursor: default;
-}
+} */
 
-.navbar a {
+.navbar a,
+.dropdown_menu a {
+    /* position: relative; */
     font-size: 2rem;
     color: var(--text-color);
-    margin: 3rem;
-    transition: .3s;
-     font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
 }
 
+
+/* --------- dropdown menu ------------ */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 340px;
+}
+
+.dropdown_menu a,
+.dropdown_menu a1 {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dropdown_menu a1 {
+    width: 100%;
+}
+
+
 .navbar a:hover,
-.navbar a.active {
+.navbar a.active,
+.dropdown_menu a:hover,
+.dropdown_menu a.active {
     color: var(--main-color);
 }
-.navbar_icon a:hover,
-.navbar_icon a.active {
-    background: var(--main-color);
-    color: var(--bg-color);
+
+.header .toggle_btn {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
 }
+.header .toggle_btn:hover {
+    color: var(--main-color);
+}
+
+
+header.sticky {
+    padding: 6px 30px;
+    background: var(--bg-color);
+}
+
+
+
+/* ----------------------------------------- home page ------------------------------- */
 
 .home {
     /* background: url(/img/rwppn); */
-    /* background-size: 100%; */
+    background: url(/img/rwppn-sora-indoo2r.jpg);
+    background-size: 100%;
     /* backdrop-filter: blur(2px); */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .home_page {
@@ -120,6 +177,10 @@ section {
     color: var(--main-color);
     margin-bottom: 25px;
     font-family: 'Oswald', sans-serif;
+}
+
+.home_page h2:hover {
+    color: var(--text-color);
 }
 
 .home_page p {
@@ -275,7 +336,7 @@ span:hover {
 
 
 
-
+/* ----------------------------------------- footer page ------------------------------- */
 
 .footer_page {
     display: flex;
@@ -331,3 +392,92 @@ span:hover {
     color: var(--main-color);
     border: 2px solid var(--main-color);
 }
+
+
+
+
+
+/* ----------------------------------------- responsive design ------------------------------- */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1100px){
+    .header .navbar {
+        display: none;
+    }
+    .header .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .header img {
+        width: 14vw;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+    .header img {
+        width: 12vw;
+    }
+
+    .home_page h4 {
+        font-size: 20px;
+        /* margin-top: 350px; */
+    }
+    
+    .home_page h2 {
+        /* margin-top: 20px; */
+        font-size: 60px;
+        /* margin-bottom: 25px; */
+    }
+    
+    .home_page h2:hover {
+        color: var(--text-color);
+    }
+    
+    .home_page p {
+        font-size: 20px;
+        /* margin-bottom: 30px; */
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        width: unset;
+        left: 2rem;
+    }
+    .dropdown_menu.open {
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header img {
+        width: 10vw;
+    }
+    .home_page h2 {
+        font-size: 30px;
+    }
+}
+
