@@ -514,7 +514,7 @@
             <div class="p_b_blog">
             <p>We provide best and fresh quality foods. We also gives you required signature dishes.</p>
             </div>
-            <a href="page/form_book.php" class="button">BOOK SERVICES</a>
+            <a href="php/form_book.php" class="button">BOOK SERVICES</a>
         </div>
 
     </section>
