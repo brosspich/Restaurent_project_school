@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +34,11 @@ html {
 body {
     background: var(--bg-color);
     /* backdrop-filter: blur(3px); */
+<<<<<<< HEAD
     /* background-size: 100%; */
+=======
+    background-size: 100%;
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
     color: var(--text-color);
 }
 
@@ -139,6 +147,7 @@ header.sticky {
 }
 
 
+<<<<<<< HEAD
 span {
     color: var(--main-color);
     font-size: 20px;
@@ -149,13 +158,20 @@ span:hover {
 }
 
 
+=======
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 
 /* ----------------------------------------- home page ------------------------------- */
 
 .home {
     /* background: url(/img/rwppn); */
+<<<<<<< HEAD
     background: url(../img/rwppn-sora-indoo2r2.jpg);
     /* background-size: 100%; */
+=======
+    background: url(/img/rwppn-sora-indoo2r.jpg);
+    background-size: 100%;
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
     background-position: center;
     background-attachment: fixed;
     backdrop-filter: blur(10px);
@@ -334,8 +350,13 @@ span:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     background: url(../img/20.jpg) fixed center;
     /* background-size: 100%; */
+=======
+    background: url(/img/20.webp) fixed center;
+    background-size: 100%;
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
     /* border-radius: 10px; */
     padding: 4rem 20% 4rem;
     gap: 2rem;
@@ -389,6 +410,7 @@ span:hover {
 
 /* ----------------------------------------- menu page ------------------------------- */
 .menu {
+<<<<<<< HEAD
     /* background: var(--second-bg-color); */
     background: var(--bg-color);
     display: flex;
@@ -499,6 +521,11 @@ button.active {
 
 
 
+=======
+    background: var(--second-bg-color);
+}
+
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 
 
 
@@ -506,6 +533,7 @@ button.active {
 
 .ourchef {
     background: var(--second-bg-color2);
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -622,6 +650,8 @@ button.active {
 .slider .navigation_slider .btn_slider.activee {
     background: var(--main-color);
     box-shadow: 0 0 2px rgb(255, 0, 200);
+=======
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 }
 
 
@@ -633,6 +663,7 @@ button.active {
     background: var(--bg-color);
 }
 
+<<<<<<< HEAD
 .top_gallery,
 .botton_gallery {
     /* margin-top: 75px; */
@@ -742,6 +773,8 @@ button.active {
     
 }
 
+=======
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 
 
 
@@ -751,6 +784,7 @@ button.active {
     background: var(--second-bg-color);
 }
 
+<<<<<<< HEAD
 .blog .top_blog {
     display: flex;
     flex-direction: column;
@@ -863,10 +897,13 @@ button.active {
     margin-bottom: 30px;
 }
 
+=======
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 
 
 /* ----------------------------------------- contect page ------------------------------- */
 
+<<<<<<< HEAD
 .contact {
     background: var(--second-bg-color2);
     display: flex;
@@ -951,6 +988,52 @@ button.active {
 }
 
 .botton_contact a {
+=======
+.contect {
+    background: var(--second-bg-color2);
+}
+
+
+
+
+/* ----------------------------------------- footer page ------------------------------- */
+
+.footer_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px 10px;
+    background: var(--bg-color);
+}
+
+.footer_text_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_text_img p {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer_text_img img {
+    width: 7vw;
+}
+
+.footer_socail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_socail p {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.footer_socail a {
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
     display: flex;
     align-items: center;
     justify-content: center;
@@ -966,7 +1049,11 @@ button.active {
     background-size: 100%;
 }
 
+<<<<<<< HEAD
 .botton_contact a:hover {
+=======
+.footer_socail a:hover {
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
     color: var(--main-color);
     border: 2px solid var(--main-color);
 }
@@ -974,6 +1061,7 @@ button.active {
 
 
 
+<<<<<<< HEAD
 /* ----------------------------------------- footer page ------------------------------- */
 
 .footer_page {
@@ -1001,6 +1089,8 @@ button.active {
 }
 
 
+=======
+>>>>>>> 59981d134991a3dd80065694facb5b8b7cddb377
 
 /* ----------------------------------------- responsive design ------------------------------- */
 
